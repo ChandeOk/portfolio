@@ -1,0 +1,110 @@
+.profile-card {
+  /* border: 2px solid red; */
+  height: 70vh;
+  margin: 5rem;
+  display: flex;
+  /* align-items: stretch; */
+  /* float: left; */
+}
+.profile-image-container {
+  /* position: absolute; */
+  width: 70vh;
+  height: 70vh;
+  /* border: 1px solid white; */
+  flex-shrink: 0;
+  position: relative;
+}
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  border-radius: 2px;
+  box-shadow: 4px 4px 10px 2px rgba(0, 2, 3, 0.205);
+  /* border: 1px solid white; */
+}
+.profile-name {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Playfair Display', serif;
+  color: white;
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgb(7, 0, 0);
+}
+.profile-card-text {
+  border-radius: 2px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: white;
+  align-self: center;
+  min-height: 80%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.profile-card-text-header {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin-bottom: 4%;
+}
+.profile-card-text-para {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.658);
+  margin-bottom: 0.6rem;
+  /* text-align: justify; */
+}
+.icons-container {
+  margin-left: auto;
+  font-size: 2.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 1100px) and (min-width: 500px) {
+  .profile-image-container {
+    width: 44vw;
+    height: 66vh;
+    flex-shrink: 0;
+  }
+  .profile-image {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .profile-card-text {
+    /* transform: translate(-60%, 30%); */
+    max-height: 66vh;
+    align-self: auto;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .profile-card {
+    /* height: 70vh; */
+    /* margin: 2rem; */
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-image-container {
+    width: 90vw;
+    height: 90vw;
+  }
+  .profile-name {
+    display: none;
+  }
+  .profile-card-text {
+    width: 90vw;
+    min-height: max-content;
+    z-index: 1;
+    padding: 1rem;
+  }
+}
