@@ -1,16 +1,11 @@
 import { useState } from 'react';
 import './App.css';
 import ProfileCard from './ProfileCard';
-import profileImg from './assets/profile-photo.jpg';
+import profileImg from './assets/profile-photo2.jpg';
 import photo2 from './assets/photo2.jpg';
 import ProjectCard from './ProjectCard';
 import data from './data';
-import {
-  AiOutlinePhone,
-  AiOutlineMail,
-  AiOutlineTwitter,
-  AiFillGithub,
-} from 'react-icons/ai';
+import { AiOutlinePhone, AiOutlineMail, AiOutlineTwitter, AiFillGithub } from 'react-icons/ai';
 
 function App() {
   const [projects, setProjects] = useState(data);
@@ -42,8 +37,7 @@ function App() {
         <div className='contact-info-container'>
           <h2 className='contact-info-header'>Contact me</h2>
           <p className='contact-info-text'>
-            Please get in touch if you think our work could be mutually
-            beneficial
+            Please get in touch if you think our work could be mutually beneficial
           </p>
           <p className='contact-info-address'>
             1234 Random Road <br /> Random Town, Randomfolnia 00420
@@ -58,10 +52,7 @@ function App() {
           </div>
           <div className='contact-info-icons'>
             <AiOutlineTwitter />{' '}
-            <AiFillGithub
-              onClick={onGitIconClick}
-              style={{ cursor: 'pointer' }}
-            />
+            <AiFillGithub onClick={onGitIconClick} style={{ cursor: 'pointer' }} />
           </div>
         </div>
         <div className='contact-image-container'>
